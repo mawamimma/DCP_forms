@@ -1,0 +1,33 @@
+﻿<Window x:Class="DCP.wpf.ExpendHeads"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DCP.wpf"
+        mc:Ignorable="d"
+        xmlns:vm="clr-namespace:DCP.wpf.ViewModel"
+        Title="ExpendHead" Height="450" Width="800">
+    <Window.DataContext>
+        <vm:ExpendHeadViewModel/>
+    </Window.DataContext>
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="40,0,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Foreground="#FFE71717" FontSize="24"><Run FontWeight="Bold" Text="DCP"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="40,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155" Foreground="#FF2E6BED" Text="Digital Creation Plan"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="40,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" Foreground="#FF208300" FontSize="16"><Run FontWeight="Bold" Text="Expenditure Head"/></TextBlock>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="293" Margin="40,96,0,0" VerticalAlignment="Top" Width="710">
+            <Button Content="Save" Command="{Binding SaveCommand}" HorizontalAlignment="Left" Height="40" Margin="564,227,0,0" VerticalAlignment="Top" Width="100" Background="#FFE42D2D" BorderBrush="#FFF57C7C"/>
+        </Border>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="142,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <TextBlock HorizontalAlignment="Left" Height="30" Margin="65,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67"><Run Background="White" FontFamily="Cascadia Mono" FontWeight="Bold" FontSize="12.666666666666666" Text="ExpCode:"/></TextBlock>
+        <TextBox Text="{Binding ExpendHead.Id, Mode=TwoWay}" HorizontalAlignment="Left" Height="25" Margin="142,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313"/>
+        <TextBox Text="{Binding ExpendHead.ExpCode, Mode=TwoWay}" HorizontalAlignment="Left" Height="27" Margin="142,152,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313"/>
+        <TextBlock HorizontalAlignment="Left" Height="50" Margin="65,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="243"><Run FontWeight="Bold" Text="ExpDetail:"/></TextBlock>
+        <TextBox Text="{Binding ExpendHead.ExpDetails, Mode=TwoWay}" HorizontalAlignment="Left" Margin="142,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313" Height="28"/>
+        <TextBlock HorizontalAlignment="Left" Height="35" Margin="65,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="126"><Run Background="White" FontFamily="Cascadia Mono" FontWeight="Bold" FontSize="12.666666666666666" Text="UserID:"/></TextBlock>
+        <TextBox Text="{Binding ExpendHead.UserID, Mode=TwoWay}" HorizontalAlignment="Left" Height="30" Margin="142,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="313"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="65,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="222"><Run FontWeight="Bold" Text="EntryDate:"/></TextBlock>
+        <DatePicker Text="{Binding ExpendHead.EntryDate, Mode=TwoWay}" HorizontalAlignment="Left" Height="34" Margin="142,270,0,0" VerticalAlignment="Top" Width="313"/>
+        <TextBlock HorizontalAlignment="Left" Height="38" Margin="66,118,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"><Run FontWeight="Bold" Text="ID:"/></TextBlock>
+
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCP.api", "DCP.api\DCP.api.csproj", "{99A924F5-654F-412A-987C-AF7BB3920104}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DCP.wpf", "DCP.wpf\DCP.wpf.csproj", "{417CCBC2-9944-46FE-86EA-B23D78AE4CCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99A924F5-654F-412A-987C-AF7BB3920104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99A924F5-654F-412A-987C-AF7BB3920104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99A924F5-654F-412A-987C-AF7BB3920104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99A924F5-654F-412A-987C-AF7BB3920104}.Release|Any CPU.Build.0 = Release|Any CPU
+		{417CCBC2-9944-46FE-86EA-B23D78AE4CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{417CCBC2-9944-46FE-86EA-B23D78AE4CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{417CCBC2-9944-46FE-86EA-B23D78AE4CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{417CCBC2-9944-46FE-86EA-B23D78AE4CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0959B45C-B78F-4E61-94D2-07F20286F700}
+	EndGlobalSection
+EndGlobal
